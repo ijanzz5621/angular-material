@@ -2,17 +2,17 @@
 
 <form class="example-form">
     <mat-form-field class="example-full-width">
-        <mat-label>Number</mat-label>
+        <mat-label>Color</mat-label>
         <input 
             type="text"
             placeholder="Pick One"
-            aria-label="Number"
+            aria-label="Color"
             matInput
             [formControl]="myControl"
             [matAutocomplete]="auto">
         <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
             @for (option of filteredOptions | async; track option) {
-                <mat-option [value]="option">{{option}}</mat-option>
+                <mat-option [value]="option.name">{{option.name}}</mat-option>
             }
         </mat-autocomplete>
     </mat-form-field>
