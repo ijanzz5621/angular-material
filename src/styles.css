@@ -2,7 +2,6 @@
 
 html, body { 
     height: 100%; 
-    margin: 10px;
 }
 body { 
     margin: 0; 
@@ -11,6 +10,7 @@ body {
 }
 
 .main-container {
+    margin: 10px;
     display: inline-flex;
     flex-wrap: wrap;
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MaterialModule } from '../../Material.Module';
+import { MaterialModule } from '../../material.module';
 
 interface Food {
   value: string;

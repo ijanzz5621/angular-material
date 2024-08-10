@@ -1,1 +1,15 @@
-<p>menu works!</p>
+<mat-toolbar color="primary" class="mat-elevation-z6">
+    <button mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Angular Material Tutorial</span>
+    <span class="example-spacer"></span>
+    <button mat-button routerLink="" routerLinkActive="router-link-active">Home</button>
+    <button mat-button [mat-menu-trigger-for]="lvl1About">About</button>
+    <mat-menu #lvl1About="matMenu">
+        <button mat-menu-item>Personal</button>
+        <button mat-menu-item>Company</button>
+        <button mat-menu-item>World Wide</button>
+    </mat-menu>
+    <button mat-button routerLink="['pages/contact']">Contact</button>
+</mat-toolbar>
