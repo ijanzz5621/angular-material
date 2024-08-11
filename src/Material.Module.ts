@@ -8,6 +8,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatBadgeModule } from '@angular/material/badge';
 
 @NgModule({
     exports:[
@@ -20,6 +21,7 @@ import { MatMenuModule } from '@angular/material/menu';
         MatAutocompleteModule,
         MatToolbarModule,
         MatMenuModule,
+        MatBadgeModule,
     ]
 })
 

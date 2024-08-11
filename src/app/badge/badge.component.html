@@ -1,0 +1,17 @@
+<h3>Badge</h3>
+
+<div style="display: inline-flex;">
+
+    <div style="margin: 10px;">
+        <button mat-flat-button (click)="increaseBadgeCount()">Increase Badge</button>
+    </div>
+
+    <button [matBadge]="badge1" matBadgeColor="warn" matBadgeSize="large" matBadgePosition="after" mat-flat-button>Welcome</button>
+    <div style="margin-left: 10px;">
+        <button [matBadge]="badge2" matBadgeColor="warn" matBadgeSize="medium" matBadgePosition="after" mat-flat-button>Angular</button>
+    </div>
+
+    <div style="margin-left: 10px;">
+        <mat-icon [matBadge]="badge1">home</mat-icon>
+    </div>
+</div>

@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { BadgeComponent } from './badge/badge.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     AboutComponent,
     RouterModule,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    BadgeComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
